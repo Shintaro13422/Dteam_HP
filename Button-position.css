@@ -1,0 +1,43 @@
+.btn--position {
+    position: relative;
+}
+a.btn--position {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    left: 50%;
+    width: 335px;
+    height: 63px;
+    border-bottom : solid 2px #707070 ;
+    text-decoration: none;
+    transform: translateX(-50%);
+}
+
+.btn--position-text {
+    position: absolute;
+    top: 49%;
+    right: 55px;
+    font-size: 18px;
+    text-align: right;
+    font-weight: bold;
+    line-height: 64px;
+    height: 64px;
+    text-decoration: none;
+    color: #292929;
+    font-family: 'Noto Sans JP', sans-serif;
+    transform: translateY(-50%);
+}
+
+a.btn--position:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 26.9px;
+    width: 9.34px;
+    height: 15.5px;
+    display: inline-block;
+    background-image: url("./images/button_position.png");
+    background-repeat:  no-repeat;
+    background-size:contain;
+    transform: translateY(-50%);
+}
