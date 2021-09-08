@@ -1,0 +1,31 @@
+.btn--red,
+a.btn--red {
+    position: relative;
+    width: 335px;
+    height: 80px;
+    font-size: 18px;
+    line-height: 80px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 7px 0 rgb(70, 70, 70);
+    font-family: 'Noto Sans JP', sans-serif;
+    left: 50%;
+    color: #fff;
+    background-color: #C40001;
+    transform: translateX(-50%);
+}
+
+a.btn--red:after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: -3px 0 0 5px;
+    background: url("./images/button_entry.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
