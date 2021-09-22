@@ -1,0 +1,52 @@
+
+/*********** スマホレイアウト ***********/
+
+body{
+    width: 100%;
+    background-color: #F3F4F5;
+}
+
+#wrapper{
+    width: 100%;
+    padding: 0px 16px;
+}
+
+section{
+    max-width: 343px;
+    height: 68px;
+    background-color: #ffff;
+    padding: 13px;
+    margin: 0 auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: solid 1px #C40001;
+    color: #C40001;
+}
+dl{
+    width: 100%;
+}
+dt{
+    width: 30%;
+    column-count: 2;
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+
+}
+dd{
+    width: 70%;
+    margin-left: 80px;
+}
+
+span:nth-child(1){
+    font-size: 11px;
+    font-weight: lighter;
+}
+span:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+}
+dd > span:nth-child(1){
+    font-size: 18px;
+    line-height: 40px;
+}
