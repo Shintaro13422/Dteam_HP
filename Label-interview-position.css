@@ -1,0 +1,88 @@
+.label-item-title {
+    right: 50%;
+    width: 335px;
+    margin: 0px auto 24px auto;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 1000;
+    color: #292929;
+}
+
+.label-wrap {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 326px;
+}
+
+.label-container {
+    position: relative;
+}
+
+input[type=checkbox]+label:before{
+    position: absolute;
+    content: "";
+    top: 22px;
+    right: 8px;
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-image: url("./images/label-interview-position_icon.png");
+    background-repeat:  no-repeat;
+    z-index:300;
+}
+
+.label-item {
+    position: relative;
+    overflow: hidden;
+    height: 17px;
+    width: 274px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    padding: 23px 24px 23px 24px;
+    color: #292929;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    border: 2px solid #707070;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    z-index: 100;
+}
+
+.label-item p {
+    margin-top: 48px;
+    margin-bottom: 0px;
+    color: #000000;
+    visibility:hidden;
+}
+
+.label-item hr {
+    position: absolute;
+    top: 58px;
+    right: 50%;
+    transform: translateX(50%);
+    visibility:hidden;
+}
+
+.label-trigger {
+    display: none;
+}
+.label-trigger:checked + .label-btn::before {
+    -webkit-transform: rotateX(180deg);
+    transform:rotateX(180deg);
+}
+.label-trigger:checked ~ .label-item {
+    height: auto;
+    font-weight: bold;
+}
+.label-trigger:checked ~ .label-item p {
+    visibility:visible;
+}
+.label-trigger:checked ~ .label-item hr {
+    visibility:visible;
+}
+
